@@ -1,0 +1,15 @@
+[Unit]
+Description="HomeKit Lamp"
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/mjo-hap-python/code
+ExecStart=/usr/bin/python3 /home/pi/mjo-hap-python/code/lamp.py
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
