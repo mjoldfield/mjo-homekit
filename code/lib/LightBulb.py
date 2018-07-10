@@ -61,8 +61,7 @@ class LightBulb(Accessory):
     # push local state to PWM
     def set_bulb(self):
         if self.is_on and self.brightness > 0:
-            theta0 = 0.003
-            theta  = theta0 ** (1 - self.brightness)
+            theta  = self.brightness ** 2.5
             self.set_pwm_state(theta)
         else:
             self.set_pwm_state(0)
