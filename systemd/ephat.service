@@ -1,0 +1,15 @@
+[Unit]
+Description="HomeKit Envirophat"
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/mjo-homekit/code
+ExecStart=/usr/bin/python3 /home/pi/mjo-homekit/code/ephat.py
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
