@@ -2,6 +2,15 @@
 
 Simple accessories written in Python for Apple’s HomeKit API.
 
+Presently there is:
+
+* [a light](https://mjoldfield.com/atelier/atelier-dest/2018/06/homekit-light.html);
+
+* [a temperature and light sensor](https://mjoldfield.com/atelier/2018/07/homekit-ephat.html) based around
+   the [Enviro pHAT](https://shop.pimoroni.com/products/enviro-phat).
+
+# Credits 
+
 Most of the hard work has been done by other people:
 
 ## HAP-python
@@ -12,9 +21,9 @@ library, which you can see on [GitHub](https://github.com/ikalchev/HAP-python)
 He provides example code under the Apache License, version 2.0, which
 I have butchered to make my accessories. This applies to:
 
-* code/lamp.py
+* code/*.py
 
-* code/lib/LightBulb.py
+* code/lib/*.py except code/lib/pwm.py
 
 ## PWM
 
@@ -25,8 +34,3 @@ repo](https://github.com/scottellis/pwmpy) has good documentation.
 
 This file is covered by the New BSD license.
 
-# Related resources
-
-You might find this interesting:
-
-* [A HomeKit light](http://mjoldfield.com/atelier/atelier-dest/2018/06/homekit-light.html)
